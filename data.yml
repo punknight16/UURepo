@@ -1,0 +1,61 @@
+COHORTANALYSIS:
+  type: sourceInput
+  operation:
+    database: BB_DB
+    dataset: BB_SCHEMA
+    table: COHORTANALYSIS
+    name: ""
+    type: sourceInput
+  inputs: {}
+  outputs: {}
+  name: ""
+  stepCounter: 1
+  x: 0
+  y: 0
+COHORTFORMS:
+  type: sourceInput
+  operation:
+    database: BB_DB
+    dataset: BB_SCHEMA
+    table: COHORTFORMS
+    name: ""
+    type: sourceInput
+  inputs: {}
+  outputs: {}
+  name: ""
+  stepCounter: 2
+  x: 0
+  y: 0
+JOIN_MODELS:
+  type: sourceInput
+  operation:
+    database: BB_DB
+    dataset: BB_SCHEMA
+    table: JOIN_MODELS
+    name: ""
+    type: sourceInput
+  inputs: {}
+  outputs: {}
+  name: ""
+  stepCounter: 3
+  x: 0
+  y: 0
+testModel:
+  type: sql
+  operation:
+    sql: |-
+      SELECT
+        DATE AS DATE,
+        WK AS WK,
+        UNIQUE_PAGEVIEWS AS UNIQUE_PAGEVIEWS
+      FROM
+        ${COHORTANALYSIS}
+    name: testModel
+    sqlType: Table
+    type: sql
+  inputs: {}
+  outputs: {}
+  name: <NewModel4>
+  stepCounter: 4
+  x: 0
+  y: 0
