@@ -1,0 +1,51 @@
+steps:
+  "1":
+    type: sourceInput
+    operation:
+      database: BB_DB
+      dataset: BB_SCHEMA
+      table: COHORTANALYSIS
+      name: ""
+      type: sourceInput
+    inputs: {}
+    outputs: {}
+    name: ""
+    stepCounter: 1
+    x: 0
+    y: 0
+  "2":
+    type: sourceInput
+    operation:
+      database: BB_DB
+      dataset: BB_SCHEMA
+      table: COHORTFORMS
+      name: ""
+      type: sourceInput
+    inputs: {}
+    outputs: {}
+    name: ""
+    stepCounter: 2
+    x: 0
+    y: 0
+  "3":
+    type: sourceInput
+    operation:
+      database: BB_DB
+      dataset: BB_SCHEMA
+      table: JOIN_MODELS
+      name: ""
+      type: sourceInput
+    inputs: {}
+    outputs: {}
+    name: ""
+    stepCounter: 3
+    x: 0
+    y: 0
+treeData:
+  nodes:
+    - stepCounter: 1
+      nodes: []
+    - stepCounter: 2
+      nodes: []
+    - stepCounter: 3
+      nodes: []
